@@ -1,0 +1,2 @@
+# 0x02-shell_redirections
+This directory contains scripts for Linux shell redirections
