@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# A Bash script that lists files in the current directory and displays only the part of the name after the first dash (-).
+
+for filename in *; do
+    # Check if the file is not a hidden file (does not start with a dot)
+    if [ "${filename:0:1}" != "." ]; then
+        # Use cut to extract the part after the first dash
+        echo "$filename" | cut -d '-' -f 2-
+    fi
+done
